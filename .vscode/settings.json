@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/mnt/BACKUP/[Dev]/eclipse-workspace/mysql-connector-5.1.18.jar"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
+}

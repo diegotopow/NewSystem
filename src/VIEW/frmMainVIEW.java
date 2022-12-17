@@ -1,14 +1,11 @@
 package VIEW;
 
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-
 import br.com.NewSystem.DAO.UsuarioDAO;
 import br.com.NewSystem.DTO.UsuarioDTO;
-
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
@@ -33,9 +30,7 @@ public class frmMainVIEW extends JFrame {
 	private JTextField txtNomeUsuario;
 	private JPasswordField txtSenhaUsuario;
 
-	/**
-	 * Launch the application.
-	 */
+	// Executa o programa;
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -49,11 +44,9 @@ public class frmMainVIEW extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
+	// Cria a Janela do programa;
 	public frmMainVIEW() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Rdorigo\\Desktop\\WorkSpace\\FICR2\\AvaliacaoPoo\\logoCat.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("img\\logoCat.png"));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -105,8 +98,6 @@ public class frmMainVIEW extends JFrame {
 			public void actionPerformed(ActionEvent e) {	
 				
 				}
-					
-				
 			
 		});
 		txtSenhaUsuario.setBounds(35, 164, 151, 20);

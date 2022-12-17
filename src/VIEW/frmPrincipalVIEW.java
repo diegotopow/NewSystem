@@ -42,9 +42,7 @@ public class frmPrincipalVIEW extends JFrame {
 	private JButton btnLimpar;
 	private JButton btnExcluir;
 
-	/**
-	 * Launch the application.
-	 */
+	// Executa a aplicação;
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -58,11 +56,9 @@ public class frmPrincipalVIEW extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
+	// Cria a janela da aplicação;
 	public frmPrincipalVIEW() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\Rdorigo\\Desktop\\WorkSpace\\FICR2\\AvaliacaoPoo\\logoCat.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("img\\logoCat.png"));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 724, 506);
 		contentPane = new JPanel();
@@ -298,7 +294,6 @@ public class frmPrincipalVIEW extends JFrame {
 				});
 			}
 			
-			
 		} catch (Exception erro) {
 			JOptionPane.showMessageDialog(null, "Listar Clientes VIEW" + erro);
 		}
@@ -310,7 +305,6 @@ public class frmPrincipalVIEW extends JFrame {
 		txtNomeCliente.setText(tabelaCliente.getModel().getValueAt(setar, 1).toString());
 		txtCPF.setText(tabelaCliente.getModel().getValueAt(setar, 2).toString());
 		txtEmailCliente.setText(tabelaCliente.getModel().getValueAt(setar, 3).toString());
-		
 	
 	}
 	
@@ -360,7 +354,6 @@ public class frmPrincipalVIEW extends JFrame {
 		
 		ClienteDAO objclientedao = new ClienteDAO();
 		objclientedao.AlterarCliente(objclientedto);
-				
 		
 	}
 	
